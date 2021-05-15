@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="129.564">
+  <properties />
+  
+  
+            <testcase name="topCities" time="26.583" classname="testcases.T_MainScript" />
+                <testcase name="getAlerts" time="7.070" classname="testcases.T_MainScript" />
+                <testcase name="hospitalSearch" time="95.911" classname="testcases.T_MainScript" />
+      
+</testsuite>

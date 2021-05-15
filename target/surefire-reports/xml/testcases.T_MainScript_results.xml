@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FFTest"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="118.822">
+  <properties />
+  
+  
+            <testcase name="hospitalSearch" time="85.847" classname="testcases.T_MainScript" />
+                <testcase name="topCities" time="26.960" classname="testcases.T_MainScript" />
+                <testcase name="getAlerts" time="6.015" classname="testcases.T_MainScript" />
+      
+</testsuite>

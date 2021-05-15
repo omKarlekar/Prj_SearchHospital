@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<groups>
+  <run>
+  	<include name="smoke"></include>
+  	<include name="regression"></include>
+ </run>
+</groups>
+
+
+  <listeners>
+      <listener class-name="listeners.Customlistner"/>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  
+<test name="ChromeTest">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+    <class name="testcases.T_MainScript"></class>
+    </classes>
+  </test> <!-- Test -->
+
+  
+  <test name="FFTest">
+  <parameter name="browser" value="Mozila"></parameter>
+    <classes>
+    <class name="testcases.T_MainScript"></class>
+    </classes>
+  </test> <!-- Test -->
+  
+
+  
+</suite> <!-- Suite -->

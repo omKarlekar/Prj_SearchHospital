@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - IETest</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>IETest</h1>
+<p>
+  Test duration: 52.175s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">testcases.T_MainScript</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  closeTheBrowser
+      </td>
+  <td class="duration">
+    4.591s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:22169<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-9KR5CRQ&apos;, ip: &apos;192.168.43.78&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)<br />
+              base.BaseUI.quitBrowser(BaseUI.java:403)<br />
+              testcases.T_MainScript.closeTheBrowser(T_MainScript.java:24)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+              org.testng.TestRunner.afterRun(TestRunner.java:725)<br />
+              org.testng.TestRunner.run(TestRunner.java:509)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:22169</a><br />
+        <div class="stackTrace" id="exception-1">
+                      okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)<br />
+                      okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)<br />
+                      okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)<br />
+                      okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)<br />
+                      okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)<br />
+                      okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)<br />
+                      okhttp3.RealCall.execute(RealCall.java:77)<br />
+                      org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)<br />
+                      base.BaseUI.quitBrowser(BaseUI.java:403)<br />
+                      testcases.T_MainScript.closeTheBrowser(T_MainScript.java:24)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+                      org.testng.TestRunner.afterRun(TestRunner.java:725)<br />
+                      org.testng.TestRunner.run(TestRunner.java:509)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+                      org.testng.TestNG.run(TestNG.java:1017)<br />
+                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">java.net.ConnectException: Connection refused: no further information</a><br />
+        <div class="stackTrace" id="exception-2">
+                      java.base/sun.nio.ch.Net.pollConnect(Native Method)<br />
+                      java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)<br />
+                      java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)<br />
+                      java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)<br />
+                      java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)<br />
+                      java.base/java.net.Socket.connect(Socket.java:648)<br />
+                      okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)<br />
+                      okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)<br />
+                      okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)<br />
+                      okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)<br />
+                      okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)<br />
+                      okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)<br />
+                      okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)<br />
+                      okhttp3.RealCall.execute(RealCall.java:77)<br />
+                      org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)<br />
+                      base.BaseUI.quitBrowser(BaseUI.java:403)<br />
+                      testcases.T_MainScript.closeTheBrowser(T_MainScript.java:24)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+                      org.testng.TestRunner.afterRun(TestRunner.java:725)<br />
+                      org.testng.TestRunner.run(TestRunner.java:509)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+                      org.testng.TestNG.run(TestNG.java:1017)<br />
+                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+    
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">testcases.T_MainScript</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getAlerts
+      </td>
+  <td class="duration">
+    4.078s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:22169<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-9KR5CRQ&apos;, ip: &apos;192.168.43.78&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br />
+              org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:849)<br />
+              testcases.T_AlertMessage.getAlert(T_AlertMessage.java:17)<br />
+              testcases.T_MainScript.getAlerts(T_MainScript.java:45)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse">java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:22169</a><br />
+        <div class="stackTrace" id="exception-4">
+                      okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)<br />
+                      okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)<br />
+                      okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)<br />
+                      okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)<br />
+                      okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)<br />
+                      okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)<br />
+                      okhttp3.RealCall.execute(RealCall.java:77)<br />
+                      org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:849)<br />
+                      testcases.T_AlertMessage.getAlert(T_AlertMessage.java:17)<br />
+                      testcases.T_MainScript.getAlerts(T_MainScript.java:45)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+                      org.testng.TestNG.run(TestNG.java:1017)<br />
+                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse">java.net.ConnectException: Connection refused: no further information</a><br />
+        <div class="stackTrace" id="exception-5">
+                      java.base/sun.nio.ch.Net.pollConnect(Native Method)<br />
+                      java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)<br />
+                      java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)<br />
+                      java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)<br />
+                      java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)<br />
+                      java.base/java.net.Socket.connect(Socket.java:648)<br />
+                      okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)<br />
+                      okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)<br />
+                      okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)<br />
+                      okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)<br />
+                      okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)<br />
+                      okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)<br />
+                      okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)<br />
+                      okhttp3.RealCall.execute(RealCall.java:77)<br />
+                      org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:849)<br />
+                      testcases.T_AlertMessage.getAlert(T_AlertMessage.java:17)<br />
+                      testcases.T_MainScript.getAlerts(T_MainScript.java:45)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+                      org.testng.TestNG.run(TestNG.java:1017)<br />
+                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  hospitalSearch
+      </td>
+  <td class="duration">
+    9.555s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;testcases.T_SearchHospitals.getElement(String)&quot; is null</b></a><br />
+    <div class="stackTrace" id="exception-6">
+              testcases.T_SearchHospitals.hospitalSearch(T_SearchHospitals.java:18)<br />
+              testcases.T_MainScript.hospitalSearch(T_MainScript.java:31)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  topCities
+      </td>
+  <td class="duration">
+    8.150s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;testcases.T_TopCities.getElement(String)&quot; is null</b></a><br />
+    <div class="stackTrace" id="exception-7">
+              testcases.T_TopCities.topCities(T_TopCities.java:21)<br />
+              testcases.T_MainScript.topCities(T_MainScript.java:38)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>

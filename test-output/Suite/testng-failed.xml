@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.Customlistner"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="FFTest(failed)">
+    <parameter name="browser" value="Mozila"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.T_MainScript">
+        <methods>
+          <include name="hospitalSearch"/>
+          <include name="topCities"/>
+          <include name="closeTheBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- testcases.T_MainScript -->
+    </classes>
+  </test> <!-- FFTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

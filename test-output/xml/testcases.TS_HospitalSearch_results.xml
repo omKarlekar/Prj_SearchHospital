@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="108.617">
+  <properties />
+  
+  
+            <testcase name="hospitalSearch" time="86.724" classname="testcases.TS_HospitalSearch" />
+                <testcase name="topCities" time="6.011" classname="testcases.TS_HospitalSearch" />
+                <testcase name="getAlert" time="15.882" classname="testcases.TS_HospitalSearch" />
+      
+</testsuite>
