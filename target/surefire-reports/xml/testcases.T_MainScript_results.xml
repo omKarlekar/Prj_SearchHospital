@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="118.822">
+           time="97.293">
   <properties />
   
   
-            <testcase name="hospitalSearch" time="85.847" classname="testcases.T_MainScript" />
-                <testcase name="topCities" time="26.960" classname="testcases.T_MainScript" />
-                <testcase name="getAlerts" time="6.015" classname="testcases.T_MainScript" />
+            <testcase name="hospitalSearch" time="85.650" classname="testcases.T_MainScript" />
+                <testcase name="getAlerts" time="5.650" classname="testcases.T_MainScript" />
+                <testcase name="topCities" time="5.993" classname="testcases.T_MainScript" />
       
 </testsuite>

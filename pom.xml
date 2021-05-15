@@ -116,7 +116,7 @@
 
 <suiteXmlFiles>
 
-<suiteXmlFile>C:\Users\Shubham\123\Prj_Hospital_Search\src\test\resources\runner\testng.xml</suiteXmlFile>
+<suiteXmlFile>C:\Users\Shubham\123\Prj_Hospital_Search\src\test\resources\runner\RegressionSmoke.xml</suiteXmlFile>
 
 </suiteXmlFiles>
 

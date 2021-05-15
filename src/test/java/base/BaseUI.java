@@ -74,7 +74,7 @@ public class BaseUI {
 	  (TakesScreenshot) driver; File sourceFile =
 	  takeScreenShot.getScreenshotAs(OutputType.FILE);
 	  
-	  File destFile = new File(System.getProperty("user.dir") + "\\src\\test\\resources\\snapshots"
+	  File destFile = new File(System.getProperty("user.dir") + "\\src\\test\\resources\\snapshots\\"
 	  + DateUtils.getTimeStamp() + ".png"); try { FileUtils.copyFile(sourceFile,
 	  destFile); logger.addScreenCaptureFromPath(System.getProperty("user.dir") +
 	  "\\src\\test\\resources\\snapshots\\" + DateUtils.getTimeStamp() + ".png");
@@ -322,6 +322,7 @@ public class BaseUI {
 			log.info("Alert captured");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
+			takeScreenShot();
 		}
 
 	}

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Shubham\123\Prj_Hospital_Search\src\test\resources\runner\testng.xml</span>
+                    <span>C:\Users\Shubham\123\Prj_Hospital_Search\src\test\resources\runner\RegressionSmoke.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -195,7 +195,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Shubham\123\Prj_Hospital_Search\src\test\resources\runner\testng.xml</span>
+            <span class="header-content">C:\Users\Shubham\123\Prj_Hospital_Search\src\test\resources\runner\RegressionSmoke.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -207,6 +207,12 @@
     &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;include name=&quot;regression&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
@@ -295,32 +301,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'hospitalSearch')
 data.setCell(0, 2, 'testcases.T_MainScript')
-data.setCell(0, 3, 102234);
+data.setCell(0, 3, 99312);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'hospitalSearch')
 data.setCell(1, 2, 'testcases.T_MainScript')
-data.setCell(1, 3, 85847);
+data.setCell(1, 3, 85650);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'topCities')
 data.setCell(2, 2, 'testcases.T_MainScript')
-data.setCell(2, 3, 27028);
+data.setCell(2, 3, 28552);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'topCities')
+data.setCell(3, 1, 'getAlerts')
 data.setCell(3, 2, 'testcases.T_MainScript')
-data.setCell(3, 3, 26960);
+data.setCell(3, 3, 8621);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getAlerts')
+data.setCell(4, 1, 'topCities')
 data.setCell(4, 2, 'testcases.T_MainScript')
-data.setCell(4, 3, 8561);
+data.setCell(4, 3, 5993);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'getAlerts')
 data.setCell(5, 2, 'testcases.T_MainScript')
-data.setCell(5, 3, 6015);
+data.setCell(5, 3, 5650);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -353,39 +359,39 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">hospitalSearch</span>
-                <span class="method-start">8584 ms</span>
+                <span class="method-start">8212 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">topCities</span>
-                <span class="method-start">110823 ms</span>
+                <span class="method-start">107532 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getAlerts</span>
-                <span class="method-start">137852 ms</span>
+                <span class="method-start">136085 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">146413 ms</span>
+                <span class="method-start">144706 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Mozila)</span>
-                <span class="method-start">147617 ms</span>
+                <span class="method-start">145956 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">hospitalSearch</span>
-                <span class="method-start">164483 ms</span>
+                <span class="method-start">162642 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">topCities</span>
-                <span class="method-start">250331 ms</span>
+                <span class="method-start">248293 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getAlerts</span>
-                <span class="method-start">277294 ms</span>
+                <span class="method-start">254289 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">283309 ms</span>
+                <span class="method-start">259939 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
